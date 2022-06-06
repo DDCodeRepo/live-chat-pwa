@@ -6,10 +6,10 @@ function usePollingHandler(dataAPI: string, delayTime: number | null) {
   const httpObj = HttpService.getInstance();
 
   useInterval(() => {
-    httpObj
+    /* httpObj
       .get(dataAPI)
       .then((response) => response.data)
-      //.then((resData) => pollingRouter(resData));
+      //.then((resData) => pollingRouter(resData)); */
   }, delayTime);
 }
 
