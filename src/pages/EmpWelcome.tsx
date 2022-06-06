@@ -28,7 +28,7 @@ const EmpWelcome: FC = () => {
         <Typography variant="h1" component="h2">
           {`Welcome ${emp}`}
         </Typography>
-        <Button
+        {/* <Button
           sx={{
             alignItems: "center",
             height: "50px",
@@ -37,7 +37,7 @@ const EmpWelcome: FC = () => {
           }}
           variant="contained"
           onClick={() => handleClick("TeamLead")}
-        >
+        > */}
           Go To Home
         </Button>
       </Container>
