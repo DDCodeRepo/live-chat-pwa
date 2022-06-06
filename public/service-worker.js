@@ -4280,7 +4280,9 @@
     }),
       (function (e) {
         Re().precache(e);
-      })([]),
+      })([
+        { revision: "de57b5b74901a0826d70357e652795b1", url: "/index.html" },
+      ]),
       (function (e) {
         var t = Re();
         Pe(new Ne(t, e));
@@ -4296,18 +4298,13 @@
         !r.pathname.match(We)
       );
     }, ((Me = "/index.html"), Re().createHandlerBoundToURL(Me))),
-      Pe(
-        function (e) {
-          var t = e.url;
-          return (
-            t.origin === self.location.origin && t.pathname.endsWith(".png")
-          );
-        },
-        new Ke({
-          cacheName: "images",
-          plugins: [new pe({ maxEntries: 50 })],
-        })
-      ),
+      Pe(function (e) {
+        var t = e.url;
+        return t.origin === self.location.origin && t.pathname.endsWith(".png");
+      }, new Ke({
+        cacheName: "images",
+        plugins: [new pe({ maxEntries: 50 })],
+      })),
       self.addEventListener("message", function (e) {
         e.data && "SKIP_WAITING" === e.data.type && self.skipWaiting();
       });
