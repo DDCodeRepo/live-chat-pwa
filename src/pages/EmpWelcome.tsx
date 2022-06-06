@@ -37,9 +37,9 @@ const EmpWelcome: FC = () => {
           }}
           variant="contained"
           onClick={() => handleClick("TeamLead")}
-        > */}
+        >
           Go To Home
-        </Button>
+        </Button>*/}
       </Container>
     </>
   );
